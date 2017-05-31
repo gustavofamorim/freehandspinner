@@ -1,0 +1,26 @@
+body, html{
+	overflow: hidden;
+}
+
+.container {
+    margin: 0px;
+	padding: 0px;
+    cursor:move;
+}
+
+#screen{
+	width:300px;
+	height:300px;
+	position: relative;
+}
+
+#draggable{
+	z-index: 10;
+	width:70px;
+	height:70px;
+	position: relative;
+	left: 114px;
+	top: -187px;
+	border-radius: 100%;
+	background-color: black;
+}
