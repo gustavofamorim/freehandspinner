@@ -1,3 +1,5 @@
+/* MOBILE FIRST */
+
 body, html{
 	overflow: hidden;
 }
@@ -9,18 +11,106 @@ body, html{
 }
 
 #screen{
-	width:300px;
-	height:300px;
-	position: relative;
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+
+.spinner{
+	width:200px;
+	height:200px;
 }
 
 #draggable{
 	z-index: 10;
-	width:70px;
-	height:70px;
-	position: relative;
-	left: 114px;
-	top: -187px;
+	width:36px;
+	height:36px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -18px;
+    margin-left: -18px;
 	border-radius: 100%;
-	background-color: black;
+	background-color: transparent;
+}
+
+.github-corner-svg{
+	width: 80px;
+	height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+	#screen{
+		width: 300px;
+		height: 300px;
+		margin-top: -150px;
+		margin-left: -150px;
+	}
+	.spinner{
+		width: 300px;
+		height: 300px;
+	}
+	#draggable{
+		width:54px;
+		height:54px;
+		margin-top: -27px;
+	    margin-left: -27px;
+		border-radius: 100%;
+	}
+	.github-corner-svg{
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#screen{
+		width: 400px;
+		height: 400px;
+		margin-top: -200px;
+		margin-left: -200px;
+	}
+	.spinner{
+		width: 400px;
+		height: 400px;
+	}
+	#draggable{
+		width:72px;
+		height:72px;
+		margin-top: -36px;
+	    margin-left: -36px;
+		border-radius: 100%;
+	}
+	.github-corner-svg{
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#screen{
+		width: 500px;
+		height: 500px;
+		margin-top: -250px;
+		margin-left: -250px;
+	}
+	.spinner{
+		width: 500px;
+		height: 500px;
+	}
+	#draggable{
+		width:90px;
+		height:90px;
+		margin-top: -45px;
+		margin-left: -45px;
+		border-radius: 100%;
+	}
+	.github-corner-svg{
+		width: 100px;
+		height: 100px;
+	}
 }
